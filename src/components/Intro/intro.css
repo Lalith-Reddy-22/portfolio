@@ -1,0 +1,133 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    right: 10rem;
+    z-index: -1; 
+    object-fit: cover;
+    height :50vh;
+}
+
+.cont{
+    height: 100vh; 
+    width: 100vw; 
+    padding: 2rem; 
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workbtn{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height : 1rem;
+    width: 1rem;
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introname{
+    color: rgb(172,53,75);
+}
+
+.intropara{
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.btn{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border-radius: 3rem;
+}
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw
+    }
+    .cont{ 
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -20vw
+    }
+}
+
+
+.wrapper{
+    display: flex;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    height: 75px;
+    line-height: 75px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: purple;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(30,30,30);
+    border-left: 2px solid purple;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }

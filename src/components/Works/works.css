@@ -1,0 +1,45 @@
+#works {
+    margin: 0 auto; 
+    min-height: calc(100vh - 4rem); 
+    width: 100vw; 
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.worktitle {
+    color: rgb(172,53,75);
+    margin: 1rem 0; 
+    font-size: 3rem;
+    margin-top: 7rem;
+}
+
+.workdesc {
+    font-weight: 300; 
+    font-size: 1rem;
+}
+
+.workimgs {
+    margin-top: 2rem;;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100vw; 
+    flex-wrap: wrap;
+    max-width: 65rem;
+}
+
+.workimg{
+object-fit: cover; 
+height: 20rem; 
+width: 20rem;
+margin: 0.5rem;
+}
+
+.img-text{
+    color : rgb(172,53,75);
+}

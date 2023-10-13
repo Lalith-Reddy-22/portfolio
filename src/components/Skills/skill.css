@@ -1,0 +1,83 @@
+#learn{
+    width: 100vw; 
+    max-width: 65rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Stitle{
+    color: rgb(172,53,75);
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.Sdesc{
+    font-weight: 400; 
+    font-size: 0.9rem; 
+    max-width: 51rem; 
+    padding: 0 2rem;
+    letter-spacing: 1px;
+}
+
+.Bars{
+    width: 23vw; 
+    text-align: center;
+}
+
+
+.Bar {
+    margin: 1rem;
+    display: flex;
+    padding: 1.5rem 2rem; 
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+.BarImg {
+object-fit: cover; 
+height: 4rem; 
+width: 4rem;
+margin-right: 2rem;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+}
+
+.container123{
+    display: flex; 
+}
+
+.toolbox{
+    height:20rem; 
+    width : 20rem; 
+}
+
+.idea{
+    height:20rem; 
+    width : 20rem; 
+}
+
+@media screen and (max-width: 720px) {
+    .BarText>p {
+    font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .BarText>p {
+    font-size: 3vw;
+    }
+    .BarImg {
+    height: 2.25rem; width: 2.25rem;
+    }
+    .barText>h2{
+    font-size: 5vw;
+}
+}
